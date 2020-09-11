@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ComposerJsonPluginSettings">
+    <unboundedVersionInspectionSettings>
+      <excludedPackages />
+    </unboundedVersionInspectionSettings>
+    <customRepositories />
+  </component>
+  <component name="JSLintConfiguration" html="true" css="true" json="true">
+    <option css="true" />
+    <option fragment="true" />
+    <option indent="4" />
+    <option maxerr="50" />
+    <option on="true" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="VagrantProjectSettings">
+    <option name="instanceFolder" value="" />
+    <option name="provider" value="" />
+  </component>
+  <component name="VagrantSettings">
+    <option name="instanceFolder" value="" />
+    <option name="provider" value="" />
+    <option name="vagrantExecutable" value="/usr/bin/vagrant" />
+  </component>
+</project>

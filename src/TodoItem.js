@@ -4,7 +4,6 @@ export default class TodoApp extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
         this.handleChange = this.handleChange.bind(this);
     }
 

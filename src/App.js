@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import TodoItem from './TodoItem';
 
-export default class TodoApp extends React.Component {
+export default class App extends React.Component {
 
     constructor(props) {
         super(props)
@@ -24,7 +24,7 @@ export default class TodoApp extends React.Component {
                 <h2>Todo:</h2>
                 <ol>
                     {this.state.items.map((item, index) => (
-                        <TodoItem index={index} item={item} state={this.state} />
+                        <TodoItem key={index} index={index} item={item} state={this.state} />
                     ))}
                 </ol>
             </div>

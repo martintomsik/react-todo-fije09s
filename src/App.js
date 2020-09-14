@@ -1,4 +1,5 @@
 import React from 'react';
+import faker from 'faker';
 import './style.css';
 import TodoItem from './TodoItem';
 
@@ -6,16 +7,32 @@ export default class App extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = {
-            items: [
-                { id: "learn_js", text: "Learn JavaScript", done: true },
-                { id: "learn_nodejs", text: "Learn NodeJS", done: true },
-                { id: "learn_react", text: "Learn React", done: false },
-                { id: "learn_vuejs", text: "Learn VueJS", done: false },
-                { id: "go_for_run", text: "Go for a run", done: false },
-                { id: "play_cod", text: "Play Cold of Duty", done: false },
-            ]
-        }
+
+        let items = [
+            { id: "learn_js", text: "learn JavaScript", done: true },
+            { id: "learn_nodejs", text: "learn NodeJS", done: true },
+            { id: "learn_react", text: "learn React", done: false },
+            { id: "learn_vuejs", text: "learn VueJS", done: false },
+            { id: "go_for_run", text: "go for a run", done: false },
+            { id: "play_cod", text: "play Cold of Duty", done: false },
+        ]
+        
+        // Fake some other items.
+        this.fakerGenerateItems().forEach((e) => {
+            items.push(e);
+        });
+
+        this.state = { items: items }
+    }
+
+    fakerGenerateItems() {
+        let items = [];
+        Array(5).fill().forEach(element => {
+            items.push(
+                { id: faker.lorem.slug(3), text: faker.lorem.words(3), done: faker.random.boolean() },
+            );
+        });
+        return items;
     }
 
     render() {

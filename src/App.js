@@ -5,6 +5,8 @@ import TodoItem from './TodoItem';
 
 export default class App extends React.Component {
 
+    number_generated_items = 10;
+
     constructor(props) {
         super(props)
 
@@ -27,7 +29,7 @@ export default class App extends React.Component {
 
     fakerGenerateItems() {
         let items = [];
-        Array(5).fill().forEach(element => {
+        Array(this.number_generated_items).fill().forEach(element => {
             items.push(
                 { id: faker.lorem.slug(3), text: faker.lorem.words(3), done: faker.random.boolean() },
             );

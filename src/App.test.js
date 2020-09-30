@@ -4,6 +4,6 @@ import App from './components/App';
 
 test('renders todo headline', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Todo/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = getByText(/Todo/i);
+  expect(headerElement).toBeInTheDocument();
 });

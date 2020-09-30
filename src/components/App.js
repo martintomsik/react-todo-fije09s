@@ -1,6 +1,6 @@
 import React from 'react';
 import faker from 'faker';
-import './style.css';
+import '../style.css';
 import TodoItem from './TodoItem';
 
 export default class App extends React.Component {

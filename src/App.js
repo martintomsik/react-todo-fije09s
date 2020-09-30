@@ -16,7 +16,7 @@ export default class App extends React.Component {
             { id: "learn_react", text: "learn React", done: false },
             { id: "learn_vuejs", text: "learn VueJS", done: false },
             { id: "go_for_run", text: "go for a run", done: false },
-            { id: "play_cod", text: "play Cold of Duty", done: false },
+            { id: "play_cod", text: "play Call of Duty", done: false },
         ]
         
         // Fake some other items.
